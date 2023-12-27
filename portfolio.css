@@ -1,0 +1,401 @@
+*{
+padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+background:  darkblue;
+color: rgb(0, 136, 254);
+
+}
+.h{
+
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 30px 20px;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    }
+
+    .logo{
+
+        position: relative;
+        font-size: 30px;
+        padding-right: 10px;
+        text-decoration: none;
+        font-weight: 800;
+        color: aliceblue;
+        font-family:'Times New Roman', Times, serif;
+    
+
+    }
+    .logo::before{
+
+        content:'';
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        width: 100%;
+        height: 100%;
+        background:#081b29;
+        animation: showRight 1s ease forwards;
+        animation-delay: .4s;
+    }
+
+    .navbar a{
+      text-decoration: none;
+        font-size: 20px;
+        color: aliceblue;
+        margin-left:35px;
+        padding: 0%;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 500;
+        transition: 1s;
+    }
+    .navbar a:hover,
+    .navbar a.active
+    {
+
+        color: darkblue;
+
+    }
+    .home{
+
+        
+        display: flex;
+        align-items: center;
+        height: 100vh;
+        padding: 0 10%;
+    }
+    .home-content{
+max-width: 600px;
+}
+.home-content h1{
+    position: relative;
+font-size: 60px;
+font-weight: 600;
+line-height: 1.5;
+
+
+}
+.home-content h1::before{
+    content:'';
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        width: 100%;
+        height: 100%;
+        background:#081b29;
+        animation: showRight 1s ease forwards;
+        animation-delay: .1s;
+
+
+}
+.home-content h3{
+    position: relative;
+font-size: 40px;
+font-weight: 700;
+color:#00abf0;
+}
+.home-content h3::before{
+    content:'';
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        width: 100%;
+        height: 100%;
+        background:#081b29;
+        animation: showRight 1s ease forwards;
+        animation-delay: .1.3s;
+
+}
+
+.home-content p{
+    position: relative;
+    font-size: 20px;
+    margin: 20px 0 40px;
+
+}
+.home-content p::before{
+
+    content:'';
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        width: 100%;
+        height: 100%;
+        background:#081b29;
+        animation: showRight 1s ease forwards;
+        animation-delay: .1.6s;
+
+}
+
+.home-content .box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  width: 340px;
+  height: 50px;
+
+}
+.home-content .box::before{
+    content:'';
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        width: 100%;
+        height: 100%;
+        background:#081b29;
+        animation: showRight 1s ease forwards;
+        animation-delay: .1.9s;
+        z-index: 2;
+
+}
+
+.box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 4px solid #00abf0;
+    border-radius: 10px;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+    z-index: 1;
+    transition: .4s;
+
+}
+
+.box a:hover{
+
+    color:#00abf0;
+}
+.box a:nth-child(2)
+{
+    background-color: transparent;
+    color: #00abf0;
+    overflow: hidden;
+}
+
+.box a:nth-child(2):hover{
+
+    color:black;
+}
+.box a:nth-child(2)::before{
+ background: #00abf0;
+
+
+}
+.box a::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 0%;
+    height: 100%;
+    background:black;
+    z-index: -1;
+    transition: .5s;
+}
+
+.box a:hover::before{
+    width: 100%;
+
+}
+.home-icons{
+    position: relative;
+    position: absolute;
+    bottom: 40px;
+    width: 350px;
+    background:transparent;
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+.home-icons::before{
+    content:'';
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        width: 100%;
+        height: 100%;
+        background:#081b29;
+        animation: showRight 1s ease forwards;
+        animation-delay: .2.5s;
+        z-index: 2;
+}
+
+.home-icons a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 0%;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+
+
+}
+.home-icons a:hover{
+    color:black;
+
+}
+.home-icons a::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 0%;
+    height: 100%;
+    background:#00abf0;
+    z-index: -1;
+    transition: .3s;
+     
+}
+.home-icons a:hover::before{
+    width: 100%;
+}
+
+.loginbox{
+    height: 500px;
+    width: 400px;
+    left:65%;
+    top: 20%;
+    box-sizing: border-box;
+    padding: 100px 100px;
+    background-color:#00abf0;
+    color: rgb(0, 0, 0);
+    position:absolute;
+    transform: calc(-50% -50%);
+    border-radius: 20px;
+     }
+   
+   
+     .an{
+        padding: 0%;
+    margin: 0%;
+    width: 150px;
+    height: 150px;
+    border-radius: 80px;
+    top: -50px;
+    left: calc(80% - 50%);
+    position: absolute;
+    border: 8px  solid #081b29;
+
+    }
+
+    .l{
+        padding: 0% 0% 20%;
+        margin: 0%;
+        font-size: 40px;
+        font-weight:bolder;
+        font-family:'Times New Roman', Times, serif;
+        text-align: center;
+        }
+        
+        .n{
+        padding: 0% 0% 10%;
+        margin: 0%;
+        font-size: 20px;
+        font-family:Georgia;
+        font-weight: bold;
+        
+        }
+        .p{
+            padding: 0% 0% 10%;
+        margin: 0%;
+        font-size: 20px;
+        font-family:Georgia;
+        font-weight: bold;
+        }
+        .loginbox input[type="email"],input[type="password"]
+        {
+        border: none;
+        background: transparent;
+        border-bottom: 2px solid  rgb(16, 16, 16);
+        height: 40px;
+        outline: none;
+        color:rgb(9, 9, 9);
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        .loginbox input[type="submit"]
+        {
+        border:5px solid black;
+        padding: 0% 0% 0%;
+        margin: 0%;
+        border-radius: 30px ;
+        height: 30px;
+        width: 150px;
+        
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight:900;
+        color:rgb(0, 0, 0);
+        background-color:#00abf0;
+        
+        
+        }
+        .loginbox input[type="submit"]:hover
+        {cursor:pointer;
+          background:white}
+          .loginbox a{
+        
+            text-decoration: none;
+            font-size: 15PX;
+            color: black;
+            margin: 0%;
+            padding:0px 0px 0px 0px;
+          }
+        
+          .loginbox a:hover
+          {
+        
+            cursor: pointer;
+            color:white;
+          }
+          .home-loginbox{
+
+            position: absolute;
+            top: 0%;
+            right:10px;
+            width: 600px;
+            height: 800px;
+            background:#081b29;
+            border: 2px solid #081b29;
+            transition: 3s;
+          }
+
+          .home-loginbox:hover{
+           background:#00abf0;
+           opacity: .8;
+          }
+
+          @keyframes showRight{
+
+            100%{
+                width: 0%;
+            }
+          }
